@@ -1,0 +1,710 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "issues",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "id"
+      ],
+      "schema": {
+        "properties": {
+          "id": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "status": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "summary": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "description": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "rating": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "lat": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "number"
+          },
+          "lng": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "number"
+          },
+          "address": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "created_at": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "acknowledged_at": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "closed_at": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reopened_at": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "updated_at": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "shortened_url": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "url": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "private_visibility": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "boolean"
+          },
+          "html_url": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "request_type": {
+            "properties": {
+              "id": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "integer"
+              },
+              "title": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              },
+              "organization": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              },
+              "url": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              },
+              "related_issues_url": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              }
+            },
+            "description": "An explanation about the purpose of this instance.",
+            "type": "object",
+            "additionalProperties": true
+          },
+          "comment_url": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "flag_url": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "transitions": {
+            "properties": {
+              "close_url": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              }
+            },
+            "description": "An explanation about the purpose of this instance.",
+            "type": "object",
+            "additionalProperties": true
+          },
+          "reporter": {
+            "properties": {
+              "id": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "integer"
+              },
+              "name": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              },
+              "role": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              },
+              "avatar": {
+                "properties": {
+                  "full": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "square_100x100": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  }
+                },
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "additionalProperties": true
+              },
+              "html_url": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              },
+              "witty_title": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              },
+              "civic_points": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "integer"
+              }
+            },
+            "description": "An explanation about the purpose of this instance.",
+            "type": "object",
+            "additionalProperties": true
+          },
+          "media": {
+            "properties": {
+              "video_url": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "image_full": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "image_square_100x100": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "representative_image_url": {
+                "description": "An explanation about the purpose of this instance.",
+                "type": "string"
+              }
+            },
+            "description": "An explanation about the purpose of this instance.",
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "description": "The root schema comprises the entire JSON document.",
+        "type": "object",
+        "additionalProperties": true
+      },
+      "stream": "issues",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "id"
+            ],
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "status"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "summary"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "description"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "rating"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "lat"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "lng"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "created_at"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "acknowledged_at"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "closed_at"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reopened_at"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "updated_at"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "shortened_url"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "url"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "private_visibility"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "html_url"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "request_type"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "comment_url"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "flag_url"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "transitions"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "media"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "request_type",
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "request_type",
+            "properties",
+            "title"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "request_type",
+            "properties",
+            "organization"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "request_type",
+            "properties",
+            "url"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "request_type",
+            "properties",
+            "related_issues_url"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "transitions",
+            "properties",
+            "close_url"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "role"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "avatar"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "avatar",
+            "properties",
+            "full"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "avatar",
+            "properties",
+            "square_100x100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "html_url"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "witty_title"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reporter",
+            "properties",
+            "civic_points"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "media",
+            "properties",
+            "video_url"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "media",
+            "properties",
+            "image_full"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "media",
+            "properties",
+            "image_square_100x100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "media",
+            "properties",
+            "representative_image_url"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    }
+  ]
+}

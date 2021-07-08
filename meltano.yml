@@ -1,0 +1,24 @@
+version: 1
+send_anonymous_usage_stats: true
+project_id: c09fab96-f22e-4fdd-8096-b3f5593f87b0
+plugins:
+  extractors:
+  - name: tap-scf
+    namespace: tap_scf
+    executable: ./tap-scf.sh
+    capabilities:
+    - state
+    - catalog
+    - discover
+    settings:
+    - name: username
+    - name: password
+      kind: password
+    - name: start_date
+      value: '2010-01-01T00:00:00Z'
+    config:
+      start_date: '2010-01-01T00:00:00Z'
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl

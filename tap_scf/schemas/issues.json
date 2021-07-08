@@ -1,0 +1,586 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 10352830,
+            "status": "Open",
+            "summary": "Potholes",
+            "description": "pothole in intersection ",
+            "rating": 1,
+            "lat": 43.0471365513534,
+            "lng": -76.1492047458887,
+            "address": "298 E Jefferson St Syracuse, NY 13202, USA",
+            "created_at": "2021-07-08T13:00:04-04:00",
+            "acknowledged_at": null,
+            "closed_at": null,
+            "reopened_at": null,
+            "updated_at": "2021-07-08T13:00:07-04:00",
+            "shortened_url": null,
+            "url": "https://seeclickfix.com/api/v2/issues/10352830",
+            "point": {
+                "type": "Point",
+                "coordinates": [
+                    -76.14920474588871,
+                    43.04713655135342
+                ]
+            },
+            "private_visibility": false,
+            "html_url": "https://seeclickfix.com/issues/10352830",
+            "request_type": {
+                "id": 33843,
+                "title": "Potholes",
+                "organization": "Streets, Sidewalks & Transportation",
+                "url": "https://seeclickfix.com/api/v2/request_types/33843",
+                "related_issues_url": "https://seeclickfix.com/api/v2/issues?lat=43.0471365513534&lng=-76.1492047458887&request_types=33843&sort=distance"
+            },
+            "comment_url": "https://seeclickfix.com/api/v2/issues/10352830/comments",
+            "flag_url": "https://seeclickfix.com/api/v2/issues/10352830/flag",
+            "transitions": {
+                "close_url": "https://seeclickfix.com/api/v2/issues/10352830/close"
+            },
+            "reporter": {
+                "id": 2111385,
+                "name": "Superintendent of Street Repair",
+                "role": "Verified Official",
+                "avatar": {
+                    "full": "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png",
+                    "square_100x100": "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png"
+                },
+                "html_url": "https://seeclickfix.com/users/2111385",
+                "witty_title": "",
+                "civic_points": 0
+            },
+            "media": {
+                "video_url": null,
+                "image_full": null,
+                "image_square_100x100": null,
+                "representative_image_url": "https://seeclickfix.com/assets/categories/pothole-e09869431979395692cc8e63399760868f40c06b83c09dfc701458aa1412bce8.png"
+            }
+        }
+    ],
+    "required": [
+        "id",
+        "status",
+        "summary",
+        "description",
+        "rating",
+        "lat",
+        "lng",
+        "address",
+        "created_at",
+        "acknowledged_at",
+        "closed_at",
+        "reopened_at",
+        "updated_at",
+        "shortened_url",
+        "url",
+        "point",
+        "private_visibility",
+        "html_url",
+        "request_type",
+        "comment_url",
+        "flag_url",
+        "transitions",
+        "reporter",
+        "media"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                10352830
+            ]
+        },
+        "status": {
+            "$id": "#/properties/status",
+            "type": "string",
+            "title": "The status schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Open"
+            ]
+        },
+        "summary": {
+            "$id": "#/properties/summary",
+            "type": "string",
+            "title": "The summary schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Potholes"
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "pothole in intersection "
+            ]
+        },
+        "rating": {
+            "$id": "#/properties/rating",
+            "type": "integer",
+            "title": "The rating schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "lat": {
+            "$id": "#/properties/lat",
+            "type": "number",
+            "title": "The lat schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                43.0471365513534
+            ]
+        },
+        "lng": {
+            "$id": "#/properties/lng",
+            "type": "number",
+            "title": "The lng schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                -76.1492047458887
+            ]
+        },
+        "address": {
+            "$id": "#/properties/address",
+            "type": [ "string", "null" ],
+            "title": "The address schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "298 E Jefferson St Syracuse, NY 13202, USA"
+            ]
+        },
+        "created_at": {
+            "$id": "#/properties/created_at",
+            "type": [ "string", "null" ],
+            "title": "The created_at schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2021-07-08T13:00:04-04:00"
+            ]
+        },
+        "acknowledged_at": {
+            "$id": "#/properties/acknowledged_at",
+            "type": [ "string", "null" ],
+            "title": "The acknowledged_at schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                null
+            ]
+        },
+        "closed_at": {
+            "$id": "#/properties/closed_at",
+            "type": [ "string", "null" ],
+            "title": "The closed_at schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                null
+            ]
+        },
+        "reopened_at": {
+            "$id": "#/properties/reopened_at",
+            "type": [ "string", "null" ],
+            "title": "The reopened_at schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                null
+            ]
+        },
+        "updated_at": {
+            "$id": "#/properties/updated_at",
+            "type": [ "string", "null" ],
+            "title": "The updated_at schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2021-07-08T13:00:07-04:00"
+            ]
+        },
+        "shortened_url": {
+            "$id": "#/properties/shortened_url",
+            "type": [ "string", "null" ],
+            "title": "The shortened_url schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                null
+            ]
+        },
+        "url": {
+            "$id": "#/properties/url",
+            "type": [ "string", "null" ],
+            "title": "The url schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://seeclickfix.com/api/v2/issues/10352830"
+            ]
+        },
+        "private_visibility": {
+            "$id": "#/properties/private_visibility",
+            "type": "boolean",
+            "title": "The private_visibility schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "html_url": {
+            "$id": "#/properties/html_url",
+            "type": "string",
+            "title": "The html_url schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://seeclickfix.com/issues/10352830"
+            ]
+        },
+        "request_type": {
+            "$id": "#/properties/request_type",
+            "type": "object",
+            "title": "The request_type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "id": 33843,
+                    "title": "Potholes",
+                    "organization": "Streets, Sidewalks & Transportation",
+                    "url": "https://seeclickfix.com/api/v2/request_types/33843",
+                    "related_issues_url": "https://seeclickfix.com/api/v2/issues?lat=43.0471365513534&lng=-76.1492047458887&request_types=33843&sort=distance"
+                }
+            ],
+            "required": [
+                "id",
+                "title",
+                "organization",
+                "url",
+                "related_issues_url"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/request_type/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        33843
+                    ]
+                },
+                "title": {
+                    "$id": "#/properties/request_type/properties/title",
+                    "type": "string",
+                    "title": "The title schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Potholes"
+                    ]
+                },
+                "organization": {
+                    "$id": "#/properties/request_type/properties/organization",
+                    "type": "string",
+                    "title": "The organization schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Streets, Sidewalks & Transportation"
+                    ]
+                },
+                "url": {
+                    "$id": "#/properties/request_type/properties/url",
+                    "type": "string",
+                    "title": "The url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://seeclickfix.com/api/v2/request_types/33843"
+                    ]
+                },
+                "related_issues_url": {
+                    "$id": "#/properties/request_type/properties/related_issues_url",
+                    "type": "string",
+                    "title": "The related_issues_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://seeclickfix.com/api/v2/issues?lat=43.0471365513534&lng=-76.1492047458887&request_types=33843&sort=distance"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "comment_url": {
+            "$id": "#/properties/comment_url",
+            "type": "string",
+            "title": "The comment_url schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://seeclickfix.com/api/v2/issues/10352830/comments"
+            ]
+        },
+        "flag_url": {
+            "$id": "#/properties/flag_url",
+            "type": "string",
+            "title": "The flag_url schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://seeclickfix.com/api/v2/issues/10352830/flag"
+            ]
+        },
+        "transitions": {
+            "$id": "#/properties/transitions",
+            "type": "object",
+            "title": "The transitions schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "close_url": "https://seeclickfix.com/api/v2/issues/10352830/close"
+                }
+            ],
+            "required": [
+                "close_url"
+            ],
+            "properties": {
+                "close_url": {
+                    "$id": "#/properties/transitions/properties/close_url",
+                    "type": "string",
+                    "title": "The close_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://seeclickfix.com/api/v2/issues/10352830/close"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "reporter": {
+            "$id": "#/properties/reporter",
+            "type": "object",
+            "title": "The reporter schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "id": 2111385,
+                    "name": "Superintendent of Street Repair",
+                    "role": "Verified Official",
+                    "avatar": {
+                        "full": "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png",
+                        "square_100x100": "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png"
+                    },
+                    "html_url": "https://seeclickfix.com/users/2111385",
+                    "witty_title": "",
+                    "civic_points": 0
+                }
+            ],
+            "required": [
+                "id",
+                "name",
+                "role",
+                "avatar",
+                "html_url",
+                "witty_title",
+                "civic_points"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/reporter/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2111385
+                    ]
+                },
+                "name": {
+                    "$id": "#/properties/reporter/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Superintendent of Street Repair"
+                    ]
+                },
+                "role": {
+                    "$id": "#/properties/reporter/properties/role",
+                    "type": "string",
+                    "title": "The role schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Verified Official"
+                    ]
+                },
+                "avatar": {
+                    "$id": "#/properties/reporter/properties/avatar",
+                    "type": "object",
+                    "title": "The avatar schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "full": "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png",
+                            "square_100x100": "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png"
+                        }
+                    ],
+                    "required": [
+                        "full",
+                        "square_100x100"
+                    ],
+                    "properties": {
+                        "full": {
+                            "$id": "#/properties/reporter/properties/avatar/properties/full",
+                            "type": "string",
+                            "title": "The full schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png"
+                            ]
+                        },
+                        "square_100x100": {
+                            "$id": "#/properties/reporter/properties/avatar/properties/square_100x100",
+                            "type": "string",
+                            "title": "The square_100x100 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "html_url": {
+                    "$id": "#/properties/reporter/properties/html_url",
+                    "type": "string",
+                    "title": "The html_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://seeclickfix.com/users/2111385"
+                    ]
+                },
+                "witty_title": {
+                    "$id": "#/properties/reporter/properties/witty_title",
+                    "type": "string",
+                    "title": "The witty_title schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "civic_points": {
+                    "$id": "#/properties/reporter/properties/civic_points",
+                    "type": "integer",
+                    "title": "The civic_points schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "media": {
+            "$id": "#/properties/media",
+            "type": "object",
+            "title": "The media schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "video_url": null,
+                    "image_full": null,
+                    "image_square_100x100": null,
+                    "representative_image_url": "https://seeclickfix.com/assets/categories/pothole-e09869431979395692cc8e63399760868f40c06b83c09dfc701458aa1412bce8.png"
+                }
+            ],
+            "required": [
+                "video_url",
+                "image_full",
+                "image_square_100x100",
+                "representative_image_url"
+            ],
+            "properties": {
+                "video_url": {
+                    "$id": "#/properties/media/properties/video_url",
+                    "type": [ "string", "null" ],
+                    "title": "The video_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        null
+                    ]
+                },
+                "image_full": {
+                    "$id": "#/properties/media/properties/image_full",
+                    "type": [ "string", "null" ],
+                    "title": "The image_full schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        null
+                    ]
+                },
+                "image_square_100x100": {
+                    "$id": "#/properties/media/properties/image_square_100x100",
+                    "type": [ "string", "null" ],
+                    "title": "The image_square_100x100 schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        null
+                    ]
+                },
+                "representative_image_url": {
+                    "$id": "#/properties/media/properties/representative_image_url",
+                    "type": "string",
+                    "title": "The representative_image_url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://seeclickfix.com/assets/categories/pothole-e09869431979395692cc8e63399760868f40c06b83c09dfc701458aa1412bce8.png"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
