@@ -20,5 +20,7 @@ class IssuesStream(SCFStream):
     primary_keys = ["id"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "issues.json"
+
+
     
 

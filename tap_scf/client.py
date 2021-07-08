@@ -1,4 +1,3 @@
-"""REST client handling, including RickAndMortyStream base class."""
 
 import requests
 from pathlib import Path
@@ -11,7 +10,6 @@ SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
 
 
 class SCFStream(RESTStream):
-    """RickAndMorty stream class."""
 
     url_base = "https://seeclickfix.com/api/v2"
 
@@ -30,7 +28,6 @@ class SCFStream(RESTStream):
         next_page_url = resp_json.get("metadata").get("pagination").get("next_page_url")
         
         if next_page_url:
-            # do this the lazy / very bad way for now ;) 
             start = next_page_url.find("page=") + len("page=")
             end = next_page_url.find("&")
             next_page_token = int(next_page_url[start:end])
@@ -51,9 +48,12 @@ class SCFStream(RESTStream):
             params["order_by"] = self.replication_key
         return params
 
+
     def parse_response(self, response: requests.Response) -> Iterable[dict]:
         """Parse the response and return an iterator of result rows."""
         resp_json = response.json()
+        
         for row in resp_json.get("issues"):
             yield row
+
 
